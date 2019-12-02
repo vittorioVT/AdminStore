@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 //services
 import { BodyService } from './body.service';
+import { AppRouterModule } from './app-router.module';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { BodyService } from './body.service';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouterModule,
   ],
   providers: [BodyService, ],
   bootstrap: [AppComponent]
