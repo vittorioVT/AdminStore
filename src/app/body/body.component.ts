@@ -8,6 +8,7 @@ import { BodyService } from '../body.service';
 })
 export class BodyComponent implements OnInit {
 
+  displayedColumns: string[] = ['Id', 'Name', 'Description', 'Picture', 'Color', 'Size', 'Price', 'Filter'];
   constructor(private service: BodyService) { }
 
   ngOnInit() {
