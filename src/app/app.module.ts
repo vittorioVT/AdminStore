@@ -5,15 +5,20 @@ import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { NewProductsComponent } from './new-products/new-products.component';
+
 //services
 import { BodyService } from './body.service';
 import { AppRouterModule } from './app-router.module';
 import { HttpClientModule } from '@angular/common/http';
+
 //material design
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
 
+//forms
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +27,8 @@ import { MatTableModule } from '@angular/material/table';
     AppComponent,
     BodyComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,8 @@ import { MatTableModule } from '@angular/material/table';
     BrowserAnimationsModule,
     MatButtonModule, MatTableModule,
 
-
+    //forms
+    ReactiveFormsModule,
 
 
   ],
