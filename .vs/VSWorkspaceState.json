@@ -4,8 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\body",
-    "\\src\\app\\footer"
+    "\\src\\app\\footer",
+    "\\src\\app\\header",
+    "\\src\\app\\Interface",
+    "\\src\\app\\new-products"
   ],
-  "SelectedNode": "\\src\\app\\body.service.ts",
+  "SelectedNode": "\\src\\app\\new-products\\new-products.component.html",
   "PreviewInSolutionExplorer": false
 }

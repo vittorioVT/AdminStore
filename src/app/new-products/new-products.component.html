@@ -1,1 +1,38 @@
-<p>new-products works!</p>
+<mat-card>
+  <span>Добавити новий товар</span>
+  <form class="new-product-form" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <!--<mat-form-field class="new-product-field">
+    <input matInput placeholder="Entry id" formControlName="id" />
+  </mat-form-field>-->
+    <br/>
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Назва товару" formControlName="name" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Опис товару" formControlName="description" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Добавити лінк зображення товару" formControlName="picture" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Колір товару" formControlName="color" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Розмір товару" formControlName="size" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Ціна товару" formControlName="price" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="new-product-field">
+      <input matInput placeholder="Категорія товару" formControlName="comment" />
+    </mat-form-field>
+    <br />
+    <button mat-raised-button [disabled]="!productForm.valid" class="create">Створити</button>
+  </form>
+</mat-card>
