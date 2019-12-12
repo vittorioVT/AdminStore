@@ -29,6 +29,7 @@ export class UpdateProductsComponent implements OnInit {
     console.log(product);
     this.dialog.open(EditProductsComponent, {
       data: {
+        Id: product.Id,
         Name: product.Name,
         Description: product.Description,
         Picture: product.Picture,

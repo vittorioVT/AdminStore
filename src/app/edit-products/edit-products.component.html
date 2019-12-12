@@ -1,1 +1,38 @@
-<p>edit-products works!</p>
+<h2 mat-dialog-title class="edit">Редагувати характеристики товару</h2>
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Назва товару" formControlName="name" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Опис товару" formControlName="description" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Добавити лінк зображення товару" formControlName="picture" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Колір товару" formControlName="color" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Розмір товару" formControlName="size" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Ціна товару" formControlName="price" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="new-product-field">
+    <input matInput placeholder="Категорія товару" formControlName="comment" />
+  </mat-form-field>
+  <br />
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button class="mat-raised-button" (click)="save()">Save </button>
+
+</mat-dialog-actions>
