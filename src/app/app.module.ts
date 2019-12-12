@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NewProductsComponent } from './new-products/new-products.component';
 import { UpdateProductsComponent } from './update-products/update-products.component';
+import { EditProductsComponent } from './edit-products/edit-products.component';
 
 //services
 import { BodyService } from './body.service';
@@ -29,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     NewProductsComponent,
-    UpdateProductsComponent
+    UpdateProductsComponent,
+    EditProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
   ],
+  entryComponents: [EditProductsComponent],
   providers: [BodyService, ],
   bootstrap: [AppComponent]
 })

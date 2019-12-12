@@ -7,8 +7,9 @@
     "\\src\\app\\footer",
     "\\src\\app\\header",
     "\\src\\app\\Interface",
-    "\\src\\app\\new-products"
+    "\\src\\app\\new-products",
+    "\\src\\app\\update-products"
   ],
-  "SelectedNode": "\\src\\app\\header\\header.component.css",
+  "SelectedNode": "\\src\\app\\update-products\\update-products.component.ts",
   "PreviewInSolutionExplorer": false
 }
