@@ -13,15 +13,23 @@
   width: 50%;
   margin-left: 20%;
   margin-right: 20%;
+  color: #9B5106;
 }
+  .new-product-field input {
+    color: #9B5106;
+  }
 
-.new-form-btn {
-  position: relative;
-}
+  .new-form-btn {
+    position: relative;
+  }
 
 .create {
-  background-color: firebrick;
+  background-color: #9B5106;
   color: white;
   font-weight: bold;
   font-family: Verdana;
+}
+.add {
+  color: #9B5106;
+  /*#f28625*/
 }

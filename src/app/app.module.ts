@@ -6,6 +6,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NewProductsComponent } from './new-products/new-products.component';
+import { UpdateProductsComponent } from './update-products/update-products.component';
 
 //services
 import { BodyService } from './body.service';
@@ -18,11 +19,13 @@ import {
   MatButtonModule, MatTableModule,
   MatInputModule, MatCardModule,
   MatSelectModule, MatToolbarModule,
+  MatDialogModule,
  } from '@angular/material';
 
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -32,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BodyComponent,
     FooterComponent,
     HeaderComponent,
-    NewProductsComponent
+    NewProductsComponent,
+    UpdateProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule, MatTableModule,
     MatInputModule, MatCardModule,
     MatSelectModule, MatToolbarModule,
+    MatDialogModule,
 
     //forms
     ReactiveFormsModule,
