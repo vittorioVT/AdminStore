@@ -10,7 +10,7 @@ import { BodyElements } from '../Interface/BodyElements';
 })
 export class UpdateProductsComponent implements OnInit {
 
-  displayedColumns: string[] = ['Id', 'Name', 'Description', 'Picture', 'Color', 'Size', 'Price', 'Filter'];
+  displayedColumns: string[] = ['Id', 'Name', 'Description', 'Picture', 'Color', 'Size', 'Price', 'Filter', 'Actions'];
   dataSource;
 
   constructor(private service: BodyService) { }

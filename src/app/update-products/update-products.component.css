@@ -13,3 +13,7 @@ table {
 .mat-cell {
   text-align: center;
 }
+.edit {
+  background-color: #9B5106;
+  color: white;
+}
