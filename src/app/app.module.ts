@@ -30,6 +30,7 @@ import {
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -45,7 +46,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     UpdateProductsComponent,
     EditProductsComponent,
     DeleteProductsComponent,
-    DeleteComponent
+    DeleteComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

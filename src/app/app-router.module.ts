@@ -3,6 +3,7 @@ import { NewProductsComponent } from './new-products/new-products.component';
 import { UpdateProductsComponent } from './update-products/update-products.component';
 import { DeleteProductsComponent } from './delete-products/delete-products.component';
 import { DeleteComponent } from './delete/delete.component';
+import { RegisterComponent } from './register/register.component';
 
 
 //component
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'update', component: UpdateProductsComponent },
   { path: 'delete-products', component: DeleteProductsComponent },
   { path: 'delete/:id', component: DeleteComponent },
+  { path: 'register', component: RegisterComponent },
 ]
 
 @NgModule({
