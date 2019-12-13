@@ -42,7 +42,7 @@
   <ng-container matColumnDef="Actions">
     <th mat-header-cell *matHeaderCellDef> Редагувати </th>
     <td mat-cell *matCellDef="let element">
-      <button (click)="deleteEntry(element)" mat-raised-button class="delete"><b>Видалити</b> </button>
+      <button mat-raised-button [routerLink]="['/delete', element.Id]" class="delete"><b>Видалити</b> </button>
     </td>
   </ng-container>
 

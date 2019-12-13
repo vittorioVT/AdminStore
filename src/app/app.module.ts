@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { NewProductsComponent } from './new-products/new-products.component';
 import { UpdateProductsComponent } from './update-products/update-products.component';
 import { EditProductsComponent } from './edit-products/edit-products.component';
+import { DeleteProductsComponent } from './delete-products/delete-products.component';
+import { DeleteComponent } from './delete/delete.component';
+
 
 //services
 import { BodyService } from './body.service';
@@ -26,7 +29,6 @@ import {
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
-import { DeleteProductsComponent } from './delete-products/delete-products.component';
 
 
 
@@ -41,7 +43,8 @@ import { DeleteProductsComponent } from './delete-products/delete-products.compo
     NewProductsComponent,
     UpdateProductsComponent,
     EditProductsComponent,
-    DeleteProductsComponent
+    DeleteProductsComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
