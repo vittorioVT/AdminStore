@@ -7,3 +7,20 @@
   color: #9B5106;
   /*#f28625*/
 }
+
+.button{
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+.save {
+  color: white;
+  background-color: #9B5106;
+}
+
+.close {
+  color: white;
+  background-color: #9d2e23;
+}

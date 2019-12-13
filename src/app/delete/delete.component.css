@@ -1,0 +1,35 @@
+
+.mat-card {
+  width: 40%;
+  margin: 5% 30% 10% 30%;
+  box-shadow: 5px 5px 5px #1d1f20;
+  background-color: #fbdec8;
+  padding-bottom: 30px;
+}
+.mat-card-title {
+  color: #9d2e23;
+}
+
+.mat-list-item {
+  color: #9B5106;
+}
+
+.confirm {
+  color: white;
+  background-color: #9B5106;
+  
+}
+
+.cancel {
+  color: white;
+  background-color: #9d2e23;
+  }
+
+button {
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 14px;
+}
+.mat-card-actions {
+  text-align: center;
+}
