@@ -4,12 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\body",
+    "\\src\\app\\edit-products",
     "\\src\\app\\footer",
     "\\src\\app\\header",
     "\\src\\app\\Interface",
     "\\src\\app\\new-products",
     "\\src\\app\\update-products"
   ],
-  "SelectedNode": "\\src\\app\\update-products\\update-products.component.ts",
+  "SelectedNode": "\\src\\app\\edit-products\\edit-products.component.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -26,6 +26,7 @@ import {
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
+import { DeleteProductsComponent } from './delete-products/delete-products.component';
 
 
 
@@ -39,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     NewProductsComponent,
     UpdateProductsComponent,
-    EditProductsComponent
+    EditProductsComponent,
+    DeleteProductsComponent
   ],
   imports: [
     BrowserModule,

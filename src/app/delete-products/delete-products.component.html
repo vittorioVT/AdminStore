@@ -1,4 +1,3 @@
-
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <!--Id-->
   <ng-container matColumnDef="Id">
@@ -43,7 +42,7 @@
   <ng-container matColumnDef="Actions">
     <th mat-header-cell *matHeaderCellDef> Редагувати </th>
     <td mat-cell *matCellDef="let element">
-      <button (click)="updateEntry(element)" mat-raised-button class="edit"><b>Редагувати</b> </button>
+      <button (click)="deleteEntry(element)" mat-raised-button class="delete"><b>Видалити</b> </button>
     </td>
   </ng-container>
 
@@ -51,3 +50,4 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 </table>
+
