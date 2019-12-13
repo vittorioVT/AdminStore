@@ -10,6 +10,10 @@ export class BodyService {
 
   constructor(private http: HttpClient) { }
 
+  getProduct(id) {
+    return this.http.get(this.baseUrl + '/' + id);
+  }
+
   getAll() {
     return this.http.get(this.baseUrl);
   }
