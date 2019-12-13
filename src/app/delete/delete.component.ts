@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BodyService } from '../body.service';
 
 @Component({
@@ -21,7 +21,8 @@ export class DeleteComponent implements OnInit {
 
   id;
   constructor(private route: ActivatedRoute,
-    private service: BodyService) { }
+    private service: BodyService,
+    private router: Router) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
@@ -38,11 +39,13 @@ export class DeleteComponent implements OnInit {
   }
 
   cancel() {
-    console.log('Cancel clicked');
+    this.router.navigate(['/delete-products']);
   }
 
   confirm() {
-    console.log('Confirm clicked');
+    this.service.deleteProduct(this.id).subscribe((data) => {
+      this.router.navigate(['/delete-products']);
+    })
 
   }
 
