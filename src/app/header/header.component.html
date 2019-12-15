@@ -5,6 +5,8 @@
   <button mat-button routerLink="/update">Редагувати існуючий</button>
   <button mat-button routerLink="/delete-products">Видалити існуючий</button>
   <span style="flex: 1 1 auto"></span>
+  <button mat-button *ngIf="auth.isAuthenticated" (click)="auth.logout()">Вийти</button>
   <button mat-button *ngIf="auth.isAuthenticated">Ласкаво просимо, {{auth.getUserName}}</button>
-  <button mat-button routerLink="/register">Зареєструватися</button>
+  <button mat-button routerLink="/register" *ngIf="!auth.isAuthenticated">Зареєструватися</button>
+  <button mat-button routerLink="/login" *ngIf="!auth.isAuthenticated">Увійти</button>
 </mat-toolbar>

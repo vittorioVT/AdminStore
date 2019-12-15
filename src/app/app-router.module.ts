@@ -4,6 +4,7 @@ import { UpdateProductsComponent } from './update-products/update-products.compo
 import { DeleteProductsComponent } from './delete-products/delete-products.component';
 import { DeleteComponent } from './delete/delete.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 //component
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'delete-products', component: DeleteProductsComponent },
   { path: 'delete/:id', component: DeleteComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent }
 ]
 
 @NgModule({

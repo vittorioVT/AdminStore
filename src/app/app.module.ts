@@ -10,6 +10,9 @@ import { UpdateProductsComponent } from './update-products/update-products.compo
 import { EditProductsComponent } from './edit-products/edit-products.component';
 import { DeleteProductsComponent } from './delete-products/delete-products.component';
 import { DeleteComponent } from './delete/delete.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+
 
 
 //services
@@ -30,7 +33,6 @@ import {
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegisterComponent } from './register/register.component';
 
 
 
@@ -47,7 +49,8 @@ import { RegisterComponent } from './register/register.component';
     EditProductsComponent,
     DeleteProductsComponent,
     DeleteComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
