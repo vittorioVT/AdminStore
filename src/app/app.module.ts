@@ -33,6 +33,7 @@ import {
 
 //forms
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -56,6 +57,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRouterModule,
     HttpClientModule,
+    FormsModule,
     
     //material design
     BrowserAnimationsModule,

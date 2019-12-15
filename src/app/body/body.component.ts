@@ -16,7 +16,7 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() {
     this.service.getAll().subscribe((data) => {
-      console.log('Result - ', data);
+      //console.log('Result - ', data);
       this.dataSource = new MatTableDataSource<BodyElements>(data as BodyElements[]);
 
     })

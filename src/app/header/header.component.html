@@ -1,9 +1,9 @@
 <mat-toolbar class="header">
-  <button mat-button routerLink="/">Головна</button>
-  <button mat-button routerLink="/body">Список товарів</button>
-  <button mat-button routerLink="/new-products">Створити новий</button>
-  <button mat-button routerLink="/update">Редагувати існуючий</button>
-  <button mat-button routerLink="/delete-products">Видалити існуючий</button>
+  <button mat-button routerLink="/" *ngIf="!auth.isAuthenticated">Головна</button>
+  <button mat-button routerLink="/body" *ngIf="auth.isAuthenticated">Список товарів</button>
+  <button mat-button routerLink="/new-products" *ngIf="auth.isAuthenticated">Створити новий</button>
+  <button mat-button routerLink="/update" *ngIf="auth.isAuthenticated">Редагувати існуючий</button>
+  <button mat-button routerLink="/delete-products" *ngIf="auth.isAuthenticated">Видалити існуючий</button>
   <span style="flex: 1 1 auto"></span>
   <button mat-button *ngIf="auth.isAuthenticated" (click)="auth.logout()">Вийти</button>
   <button mat-button *ngIf="auth.isAuthenticated">Ласкаво просимо, {{auth.getUserName}}</button>
