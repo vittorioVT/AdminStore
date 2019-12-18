@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BodyService } from '../body.service';
-import { MatTableDataSource } from '@angular/material';
+import { MatTableDataSource, MatSort } from '@angular/material';
 import { BodyElements } from '../Interface/BodyElements';
 
 @Component({
@@ -10,6 +10,8 @@ import { BodyElements } from '../Interface/BodyElements';
 })
 export class BodyComponent implements OnInit {
 
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
+
   displayedColumns: string[] = ['Id', 'Name', 'Description', 'Picture', 'Color', 'Size', 'Price', 'Filter'];
   dataSource;
   constructor(private service: BodyService) { }
@@ -18,9 +20,13 @@ export class BodyComponent implements OnInit {
     this.service.getAll().subscribe((data) => {
       //console.log('Result - ', data);
       this.dataSource = new MatTableDataSource<BodyElements>(data as BodyElements[]);
-
     })
-
   }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+
 
 }
