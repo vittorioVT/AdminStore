@@ -28,6 +28,7 @@ import {
   MatInputModule, MatCardModule,
   MatSelectModule, MatToolbarModule,
   MatDialogModule, MatListModule, MatSortModule,
+  MatPaginatorModule
  } from '@angular/material';
 
 
@@ -65,7 +66,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule, MatCardModule,
     MatSelectModule, MatToolbarModule,
     MatDialogModule, MatListModule,
-    MatSortModule,
+    MatSortModule, MatPaginatorModule,
     //forms
     ReactiveFormsModule,
 

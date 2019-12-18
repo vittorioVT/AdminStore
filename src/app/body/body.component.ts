@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { BodyService } from '../body.service';
-import { MatTableDataSource, MatSort } from '@angular/material';
+import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 import { BodyElements } from '../Interface/BodyElements';
 
 @Component({
@@ -11,6 +11,7 @@ import { BodyElements } from '../Interface/BodyElements';
 export class BodyComponent implements OnInit {
 
   @ViewChild(MatSort, { static: false }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
 
   displayedColumns: string[] = ['Id', 'Name', 'Description', 'Picture', 'Color', 'Size', 'Price', 'Filter'];
   dataSource;
@@ -20,6 +21,7 @@ export class BodyComponent implements OnInit {
     this.service.getAll().subscribe((data) => {
       //console.log('Result - ', data);
       this.dataSource = new MatTableDataSource<BodyElements>(data as BodyElements[]);
+      this.dataSource.paginator = this.paginator;
     })
   }
 
