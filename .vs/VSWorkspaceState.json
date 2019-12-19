@@ -10,6 +10,6 @@
     "\\src\\app\\login",
     "\\src\\app\\register"
   ],
-  "SelectedNode": "\\src\\app\\body\\body.component.ts",
+  "SelectedNode": "\\src\\app\\header\\header.component.css",
   "PreviewInSolutionExplorer": false
 }
