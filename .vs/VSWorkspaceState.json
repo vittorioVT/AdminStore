@@ -5,11 +5,12 @@
     "\\src\\app",
     "\\src\\app\\body",
     "\\src\\app\\delete",
+    "\\src\\app\\delete-products",
     "\\src\\app\\edit-products",
     "\\src\\app\\header",
     "\\src\\app\\login",
-    "\\src\\app\\register"
+    "\\src\\app\\new-products"
   ],
-  "SelectedNode": "\\src\\app\\header\\header.component.css",
+  "SelectedNode": "\\src\\app\\auth.service.ts",
   "PreviewInSolutionExplorer": false
 }
